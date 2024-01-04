@@ -26,7 +26,6 @@ export default function Navbar() {
                         start: "100px center",
                         end: "center center",
                         scrub: true,
-                        markers: true,
                     }
                 })
                 .fromTo("#navbar", {
@@ -42,7 +41,6 @@ export default function Navbar() {
                         start: "top center",
                         end: "center center",
                         scrub: true,
-                        markers: true,
                     }
                 })
                 .fromTo("#navbar", {
@@ -58,8 +56,6 @@ export default function Navbar() {
                         start: "top center",
                         end: "center center",
                         scrub: true,
-                        markers: true,
-                        immediateRender: false
                     }
                 })
                 .fromTo("#navbar", {
@@ -75,7 +71,6 @@ export default function Navbar() {
                         start: "top center",
                         end: "center center",
                         scrub: true,
-                        markers: true,
                     }
                 })
         });
