@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+::-moz-selection {
+    color: white;
+    background: #9ACC50;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::selection {
+    color: white;
+    background: #9ACC50;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.stroke {
+    text-shadow: -1px -1px 0 #9ACC50, 1px -1px 0 #9ACC50, -1px 1px 0 #9ACC50, 1px 1px 0 #9ACC50;
+}
+
+@supports (-webkit-text-stroke-width: 1px) {
+    .stroke {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #9ACC50;
+        text-shadow: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .stroke {
+        text-shadow: -3px -3px 0 #9ACC50, 3px -3px 0 #9ACC50, -3px 3px 0 #9ACC50, 3px 3px 0 #9ACC50;
+    }
+
+    @supports (-webkit-text-stroke-width: 3px) {
+        .stroke {
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #9ACC50;
+            text-shadow: none;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .stroke {
+        text-shadow: -5px -5px 0 #9ACC50, 5px -5px 0 #9ACC50, -5px 5px 0 #9ACC50, 5px 5px 0 #9ACC50;
+    }
+
+    @supports (-webkit-text-stroke-width: 5px) {
+        .stroke {
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: #9ACC50;
+            text-shadow: none;
+        }
+    }
 }

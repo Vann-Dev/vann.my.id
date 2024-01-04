@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Jua } from 'next/font/google'
 import './globals.css'
+import ScrollSmooth from '@/components/scrollSmooth'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Jua({
+  weight: "400",
+  subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className='bg-background'>
+          <ScrollSmooth>
+            {children}
+          </ScrollSmooth>
+        </main>
+      </body>
     </html>
   )
 }
