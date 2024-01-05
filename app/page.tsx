@@ -19,11 +19,6 @@ export default function Page() {
       fetch("https://dashboard.vannapps.com/items/stevan_portfolios").then(async (res) => {
         const response = await res.json() as unknown as { data: IPortfolioData[] }
 
-        gsap.to("#loading", {
-          opacity: 0,
-          duration: 1
-        })
-
         setPortfolio(response.data)
       }).catch(err => console.log(err))
     }
@@ -39,8 +34,6 @@ export default function Page() {
 
   return (
     <main id='main' className='overflow-hidden'>
-      <Loading />
-
       <Navbar />
 
       <Home />
