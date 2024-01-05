@@ -78,13 +78,28 @@ export default function Navbar() {
         return () => ctx.revert();
     }, [])
 
+    function navigate(e: any) {
+        e.preventDefault();
+        const target = e.target
+        const id = target.getAttribute("href")
+        const element = document.querySelector(id)
+
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest"
+            })
+        }
+    }
+
     return (
         <nav data-aos="fade-down" className="fixed top-0 flex justify-center w-full z-50 drop-shadow-2xl">
             <div id="navbar" className="text-base md:text-lg lg:text-2xl text-white gap-x-5 md:gap-x-10 mt-3 md:mt-5 lg:mt-8 md:w-1/2 bg-primary rounded-full px-6 py-2 flex justify-center border-4">
-                <Link className="hover:-translate-y-1 hover:underline transition-transform" href={"#home"} >Home</Link>
-                <Link className="hover:-translate-y-1 hover:underline transition-transform" href={"#about"} >About</Link>
-                <Link className="hover:-translate-y-1 hover:underline transition-transform" href={"#work"} >Work</Link>
-                <Link className="hover:-translate-y-1 hover:underline transition-transform" href={"#contact"} >Contact</Link>
+                <Link onClick={(e) => navigate(e)} className="hover:-translate-y-1 hover:underline transition-transform" href={"#home"} >Home</Link>
+                <Link onClick={(e) => navigate(e)} className="hover:-translate-y-1 hover:underline transition-transform" href={"#about"} >About</Link>
+                <Link onClick={(e) => navigate(e)} className="hover:-translate-y-1 hover:underline transition-transform" href={"#work"} >Work</Link>
+                <Link onClick={(e) => navigate(e)} className="hover:-translate-y-1 hover:underline transition-transform" href={"#contact"} >Contact</Link>
             </div>
         </nav>
     )

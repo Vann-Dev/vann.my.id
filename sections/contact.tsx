@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <section id="contact" className="bg-sea relative -mt-1">
+        <section id="contact" className="bg-sea relative -mt-1 pt-12">
             <div className="container px-4 md:px-8 pt-20 text-white pb-72 xl:pb-96">
                 <h2 data-aos="flip-up" className='text-center tracking-wide drop-shadow-2xl text-3xl md:text-6xl xl:text-7xl font-semibold'>
                     Interested to work together?
@@ -13,7 +13,9 @@ export default function Contact() {
                     <h3 className="text-center drop-shadow-2xl text-xl md:text-4xl lg:text-6xl">
                         Contact me at
                     </h3>
-                    <p className="text-center drop-shadow-2xl mt-4 md:mt-8 lg:mt-14 text-base md:text-2xl lg:text-4xl">me@vann.my.id</p>
+                    <div className="grid place-items-center">
+                        <Link href={"mailto:me@vann.my.id"} className="text-center drop-shadow-2xl mt-4 md:mt-8 lg:mt-14 text-base md:text-2xl lg:text-4xl">me@vann.my.id</Link>
+                    </div>
                 </div>
 
                 <Image src={"/koi.png"} alt="" width={300} height={300} className="w-44 md:w-72 lg:w-80 xl:w-96 absolute -left-16 md:-left-28 top-44 md:top-64 lg:top-80" />
