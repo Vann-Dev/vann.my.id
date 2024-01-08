@@ -14,7 +14,7 @@ export default function Contact() {
                         Contact me at
                     </h3>
                     <div className="grid place-items-center">
-                        <Link href={"mailto:me@vann.my.id"} className="text-center drop-shadow-2xl mt-4 md:mt-8 lg:mt-14 text-base md:text-2xl lg:text-4xl">me@vann.my.id</Link>
+                        <Link href={"mailto:me@vann.my.id"} className="hover:underline text-center drop-shadow-2xl mt-4 md:mt-8 lg:mt-14 text-base md:text-2xl lg:text-4xl">me@vann.my.id</Link>
                     </div>
                 </div>
 
