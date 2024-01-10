@@ -38,10 +38,6 @@ export default function Page() {
 
       <Home />
 
-      <svg className='-mt-24 md:-mt-32 lg:-mt-28 xl:-mt-48 w-full h-auto fill-background' viewBox="0 0 1440 196" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1440 0C995.394 306.648 292.081 127.77 -4 0V196H1440V0Z" />
-      </svg>
-
       <About />
 
       <div className='mt-32 relative'>
