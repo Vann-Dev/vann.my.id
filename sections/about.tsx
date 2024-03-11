@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-        <section id="about" className='bg-background -mt-1 relative'>
+        <section id="about" className='bg-background -mt-1 relative selection:text-background selection:bg-primary'>
             <div className='container px-4 md:px-8 pt-10 md:pt-20 xl:pt-32 z-30 flex-col-reverse relative flex md:flex-row gap-12 md:gap-0 items-center md:justify-between'>
                 <div className='md:w-1/2 grid justify-between z-20'>
                     <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className='text-primary text-3xl md:text-6xl xl:text-7xl font-semibold'>

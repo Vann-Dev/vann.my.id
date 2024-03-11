@@ -19,7 +19,7 @@ export interface IPortfolioData {
 
 export default function Work({ data }: { data: IPortfolioData[] }) {
     return (
-        <section id="work" className="-mt-1 bg-forest min-h-screen">
+        <section id="work" className="-mt-1 bg-forest min-h-screen selection:text-forest selection:bg-white">
             <div className="container px-4 md:px-8 pb-72 pt-32">
                 <h2 data-aos="zoom-in" className="text-white text-3xl md:text-6xl xl:text-7xl text-center tracking-wide">My Projects</h2>
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <section id="contact" className="bg-sea relative -mt-1 pt-12">
+        <section id="contact" className="bg-sea relative -mt-1 pt-12 selection:text-sea selection:bg-white">
             <div className="container px-4 md:px-8 pt-20 text-white pb-72 xl:pb-96">
                 <h2 data-aos="flip-up" className='text-center tracking-wide drop-shadow-2xl text-3xl md:text-6xl xl:text-7xl font-semibold'>
                     Interested to work together?

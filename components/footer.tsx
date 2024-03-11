@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer id="footer" className="bg-black text-white pb-24 relative -mt-1">
+        <footer id="footer" className="bg-black text-white pb-24 relative -mt-1 selection:text-black selection:bg-black">
             <div className="container px-4 md:px-8 pt-24" >
                 <div className="grid" >
                     <h3 className="mb-2 md:mb-6 lg:mb-10 text-2xl md:text-3xl lg:text-5xl">Assets by:</h3>

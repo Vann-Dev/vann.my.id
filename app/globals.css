@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-::-moz-selection {
-    color: white;
-    background: #9ACC50;
-}
-
-::selection {
-    color: white;
-    background: #9ACC50;
-}
-
 .stroke {
     text-shadow: -1px -1px 0 #9ACC50, 1px -1px 0 #9ACC50, -1px 1px 0 #9ACC50, 1px 1px 0 #9ACC50;
 }
