@@ -46,6 +46,9 @@ export default function Page() {
         <svg className="fill-forest w-full bottom-0 relative" viewBox="0 0 1440 510" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1635 373.842C901.911 -303.222 123.546 91.7319 -174 373.842V510H1635V373.842Z" />
         </svg>
+        <h2 className='text-forest absolute text-center top-32 left-1/2 -translate-x-1/2 text-2xl selection:bg-white selection:text-forest'>Wow you found me!
+          <br /> Did you know?, this website created with only 1 day?
+          <br /> Also there is other easter egg here</h2>
       </div>
 
       <Work data={portfolio} />
