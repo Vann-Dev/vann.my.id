@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Jua } from 'next/font/google'
 import './globals.css'
 import ScrollSmooth from '@/components/scrollSmooth'
+import { keywords } from '@/keywords'
 
 const inter = Jua({
   weight: "400",
@@ -10,7 +11,15 @@ const inter = Jua({
 
 export const metadata: Metadata = {
   title: 'Vann-Dev',
-  description: 'Personal website',
+  description: 'Fullstack Developer based in Indonesia, known as Vann-Dev at GitHub and Vann at Discord. Currently living in BSD City, Tangerang, Banten, Indonesia.',
+  category: 'Personal Portfolio',
+  authors: [
+    {
+      name: 'Stevan Vincent',
+      url: 'https://vann.my.id',
+    }
+  ],
+  keywords: keywords,
 }
 
 export default function RootLayout({
