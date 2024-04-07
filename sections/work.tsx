@@ -26,8 +26,8 @@ export default function Work({ data }: { data: IPortfolioData[] }) {
 
                 <div className="mt-14 columns-1 md:columns-2 lg:columns-3">
                     {data?.map((val) => (
-                        <Link href={val.link} key={val.id} className='text-white relative transition-colors duration-300 overflow-hidden hover:border-white border-4 border-transparent bg-grass rounded-xl break-inside-avoid-column flex flex-col justify-between mb-3'>
-                            <Image src={`https://dashboard.vannapps.com/assets/${val.image}` ?? ""} width={2000} height={2000} alt='' className='' />
+                        <Link href={val.link} key={val.id} className='text-white w-full aspect-video relative transition-colors duration-300 overflow-hidden hover:border-white border-4 border-transparent bg-grass rounded-xl break-inside-avoid-column flex flex-col justify-between mb-3'>
+                            <Image src={`https://dashboard.vannapps.com/assets/${val.image}` ?? ""} width={2000} height={2000} alt='' className='h-full' />
                             <div className="absolute bg-gradient-to-b from-transparent via-black/20 to-black/70 top-0 left-0 w-full h-full" />
                             <h2 className='font-medium text-sm md:text-lg tracking-widest absolute bottom-3 left-3'>{val.title}</h2>
                         </Link>
