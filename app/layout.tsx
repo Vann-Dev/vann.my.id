@@ -20,6 +20,33 @@ export const metadata: Metadata = {
     }
   ],
   keywords: keywords,
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      href: '/favicon-32x32.png',
+      url: '/favicon-32x32.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      href: '/favicon-16x16.png',
+      url: '/favicon-16x16.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      href: '/apple-touch-icon.png',
+      url: '/apple-touch-icon.png',
+    },
+    {
+      rel: 'manifest',
+      href: '/site.webmanifest',
+      url: '/site.webmanifest',
+    },
+  ]
 }
 
 export default function RootLayout({
